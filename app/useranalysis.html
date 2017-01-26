@@ -1,0 +1,79 @@
+
+<h3 style="text-align: center;">Analysis </h3>
+<div class="row" style="height: 200px">
+  <div class="col-md-12">
+    <div style="display: block;">
+    <canvas baseChart width="100" height="25"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+    </div>
+  </div>
+  <!--<div class="col-md-6" style="margin-bottom: 10px">-->
+    <!--<table class="table table-responsive table-condensed">
+      <tr>
+        <th *ngFor="let label of lineChartLabels">{{label}}</th>
+      </tr>
+      <tr *ngFor="let d of lineChartData">
+        <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
+      </tr>
+    </table>
+    <button (click)="randomize()">CLICK</button>-->
+  <!--</div>-->
+</div>
+
+<div class="col-md-4">
+  <md-card>
+  <md-card-content>
+    <h2 class="example-h2">Result</h2>
+
+    <md-progress-circle
+        class="example-margin"
+        [attr.color]="color"
+        [mode]="mode"
+        [value]="value1">
+    </md-progress-circle>
+    
+  </md-card-content>
+  </md-card>
+</div>
+  <div class="col-md-4">
+    <md-card>
+      <md-card-content>
+        <h2 class="example-h2">Result2</h2>
+    <md-progress-circle
+        class="example-margin"
+        [attr.color]="color"
+        [mode]="mode"
+        [value]="value2">
+    </md-progress-circle>
+      </md-card-content>
+    </md-card>
+  </div>
+  
+   <div class="col-md-4">
+    <md-card>
+      <md-card-content>
+        <h2 class="example-h2">Result3</h2>
+    <md-progress-circle
+        class="example-margin"
+        [attr.color]="color"
+        [mode]="mode"
+        [value]="value3">
+    </md-progress-circle>
+      </md-card-content>
+    </md-card>
+  </div>
+  
+  
+
+
+
+    
+ 
+
